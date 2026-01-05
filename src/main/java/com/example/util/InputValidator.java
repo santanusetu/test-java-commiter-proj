@@ -33,7 +33,7 @@ public class InputValidator {
         }
         String op = operation.trim().toLowerCase();
         return op.equals("add") || op.equals("subtract") || 
-               op.equals("multiply") || op.equals("divide");
+               op.equals("multiply") || op.equals("divide") || op.equals("power");
     }
 }
 

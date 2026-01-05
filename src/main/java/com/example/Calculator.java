@@ -25,7 +25,7 @@ public class Calculator {
         System.out.println("Enter 'quit' to exit\n");
 
         while (true) {
-            System.out.print("Enter operation (add, subtract, multiply, divide): ");
+            System.out.print("Enter operation (add, subtract, multiply, divide, power): ");
             String operation = scanner.nextLine().trim().toLowerCase();
 
             if (operation.equals("quit")) {
@@ -59,6 +59,8 @@ public class Calculator {
                 double result = calculatorService.calculate(operation, num1, num2);
                 System.out.println("Result: " + result + "\n");
             } catch (ArithmeticException e) {
+                System.out.println("Error: " + e.getMessage() + "\n");
+            } catch (IllegalArgumentException e) {
                 System.out.println("Error: " + e.getMessage() + "\n");
             } catch (Exception e) {
                 System.out.println("Unexpected error: " + e.getMessage() + "\n");

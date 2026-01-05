@@ -30,9 +30,9 @@ test-java-commiter-proj/
 
 ## Features
 
-- **Basic Calculator Operations**: Add, subtract, multiply, and divide
+- **Basic Calculator Operations**: Add, subtract, multiply, divide, and power
 - **Input Validation**: Validates user input for numbers and operations
-- **Error Handling**: Handles division by zero and invalid operations
+- **Error Handling**: Handles division by zero, invalid operations, and unsupported operations
 - **Unit Tests**: Comprehensive test coverage for services and utilities
 - **Maven Build**: Standard Maven project structure
 
@@ -76,17 +76,17 @@ The calculator is an interactive command-line application:
 === Simple Calculator ===
 Enter 'quit' to exit
 
-Enter operation (add, subtract, multiply, divide): add
+Enter operation (add, subtract, multiply, divide, power): add
 Enter first number: 5
 Enter second number: 3
 Result: 8.0
 
-Enter operation (add, subtract, multiply, divide): divide
-Enter first number: 10
-Enter second number: 2
-Result: 5.0
+Enter operation (add, subtract, multiply, divide, power): power
+Enter first number: 2
+Enter second number: 3
+Result: 8.0
 
-Enter operation (add, subtract, multiply, divide): quit
+Enter operation (add, subtract, multiply, divide, power): quit
 Goodbye!
 ```
 
@@ -141,3 +141,7 @@ This project is designed to test various commit scenarios:
 ## Project Status
 
 This is a test project for validating AI Git Assist functionality. The codebase is intentionally simple to make it easy to understand and modify for testing purposes.
+
+
+## Features / Changelog
+- **2026-01-04 17:13**: feat: add power operation to calculator functionality

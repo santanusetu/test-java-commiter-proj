@@ -8,7 +8,7 @@ public class CalculatorService {
     /**
      * Performs the specified calculation operation
      *
-     * @param operation The operation to perform (add, subtract, multiply, divide)
+     * @param operation The operation to perform (add, subtract, multiply, divide, power)
      * @param num1      First number
      * @param num2      Second number
      * @return The result of the calculation
@@ -25,6 +25,8 @@ public class CalculatorService {
                 return multiply(num1, num2);
             case "divide":
                 return divide(num1, num2);
+            case "power":
+                return power(num1, num2);
             default:
                 throw new IllegalArgumentException("Unsupported operation: " + operation);
         }
@@ -47,6 +49,17 @@ public class CalculatorService {
             throw new ArithmeticException("Division by zero is not allowed");
         }
         return a / b;
+    }
+
+    /**
+     * Calculates the power of a number (base raised to exponent)
+     *
+     * @param base     The base number
+     * @param exponent The exponent
+     * @return The result of base raised to the power of exponent
+     */
+    public double power(double base, double exponent) {
+        return Math.pow(base, exponent);
     }
 }
 
