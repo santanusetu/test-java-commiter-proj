@@ -1,5 +1,7 @@
 # Test Java Committer Project
 
+> **Moved.** This sample project now lives in [`ai-commit-guard/examples/calculator`](https://github.com/santanusetu/ai-commit-guard/tree/main/examples/calculator), with its history. This repository is archived.
+
 A simple calculator application designed for testing the AI Git Assist JAR tool. This project provides a clean, structured codebase with multiple files that can be modified to test various commit scenarios (features, fixes, docs, refactoring, tests).
 
 ## Project Structure
